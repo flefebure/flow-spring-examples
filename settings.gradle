@@ -1,0 +1,10 @@
+pluginManagement {
+    repositories {
+        maven {
+            url 'http://hudson:8081/artifactory/repo'
+        }
+    }
+}
+rootProject.name = 'flow-spring-example'
+include 'ui-module'
+include 'ui-bootstrap'

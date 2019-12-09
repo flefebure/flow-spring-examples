@@ -1,0 +1,37 @@
+plugins {
+    id "io.spring.dependency-management"                    version "1.0.8.RELEASE"     apply false
+
+}
+
+group 'org.vaadin.spring'
+version '1.0.0-SNAPSHOT'
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'io.spring.dependency-management'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+        //maven { 'url' 'http://hudson:8081/artifactory/repo' }
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom 'com.vaadin:vaadin-bom:14.1.0'
+        }
+    }
+
+    dependencies {
+        compile("com.vaadin:vaadin-spring-boot-starter:14.1.0")
+        compile group: 'org.springframework.boot', name: 'spring-boot-loader', version: '2.1.7.RELEASE'
+    }
+}
+
+project(':ui-bootstrap') {
+    dependencies {
+        compile project(':ui-module')
+    }
+}

@@ -15,8 +15,8 @@
     </parent>
 
     <properties>
-        <vaadin.version>14.0.0.rc7</vaadin.version>
-        <flow.maven.plugin.version>2.0.8</flow.maven.plugin.version>
+        <vaadin.version>14.1.0</vaadin.version>
+        <flow.maven.plugin.version>2.1.0</flow.maven.plugin.version>
     </properties>
 
     <pluginRepositories>
