@@ -1,21 +1,2 @@
-plugins {
-    id 'war'
-    id 'com.devsoap.vaadin-flow'                            version '1.3.1'    apply true
-    id 'org.springframework.boot'                           version '2.1.7.RELEASE'     apply true
-}
-
-group 'org.vaadin.spring'
-version '1.0.0-SNAPSHOT'
-
-
-vaadin {
-    version = '14.1.0'
-    // Enable production mode for production apps
-    productionMode = true
-}
-
-bootWar {
-    archiveBaseName = 'ui-bootstrap'
-    mainClassName = 'org.vaadin.spring.tutorial.TutorialApplication'
-    version =  '1.0.0-SNAPSHOT'
-}
+apply plugin: 'war'
+apply plugin: 'org.springframework.boot'
