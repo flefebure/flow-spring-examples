@@ -11,28 +11,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
+        <version>2.3.3.RELEASE</version>
     </parent>
 
     <properties>
-        <vaadin.version>14.1.0</vaadin.version>
-        <flow.maven.plugin.version>2.1.0</flow.maven.plugin.version>
+        <vaadin.version>14.4.5</vaadin.version>
+        <flow.maven.plugin.version>2.4.4</flow.maven.plugin.version>
     </properties>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>vaadin-prereleases</id>
-            <url>https://maven.vaadin.com/vaadin-prereleases</url>
-        </pluginRepository>
-    </pluginRepositories>
-
-    <repositories>
-        <repository>
-            <id>vaadin-prereleases</id>
-            <url>https://maven.vaadin.com/vaadin-prereleases</url>
-        </repository>
-    </repositories>
-    
     <dependencyManagement>
         <dependencies>
             <dependency>
