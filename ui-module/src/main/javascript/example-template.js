@@ -4,7 +4,7 @@ class ExampleTemplate extends PolymerElement {
 
     static get template() {
         return html`
-            <span>[[message]]"</span>`;
+            Here : <span>[[message]]"</span>`;
     }
 
     static get is() {

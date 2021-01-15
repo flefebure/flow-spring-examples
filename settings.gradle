@@ -1,0 +1,3 @@
+rootProject.name = 'flow-spring-example'
+include 'ui-module'
+include 'ui-bootstrap'
